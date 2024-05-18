@@ -1,11 +1,11 @@
-const User = require("../models/userModel");
-const catchAsync = require("../utils/catchAsync");
-const AppError = require("../utils/appError");
-const factory = require("./handlerFactory");
+const User = require('../models/userModel');
+const catchAsync = require('../utils/catchAsync');
+const AppError = require('../utils/appError');
+const factory = require('./handlerFactory');
 
 const filterObj = (obj, ...allowedFields) => {
   const newObj = {};
-  Object.keys(obj).forEach((el) => {
+  Object.keys(obj).forEach(el => {
     if (allowedFields.includes(el)) newObj[el] = obj[el];
   });
   return newObj;
@@ -17,27 +17,24 @@ exports.getMe = (req, res, next) => {
 };
 
 exports.updateMe = catchAsync(async (req, res, next) => {
-  // 1) Create error if user POSTs password data
-  if (req.body.password || req.body.passwordConfirm) {
+  // 1) create error if user POSTs password data
+  if (req.body.password || req.body.passwordConfirm)
     return next(
-      new AppError(
-        "This route is not for password updates. Please use /updateMyPassword",
-        400
-      )
+      new AppError('This route is not for password updates. Please use /updateMyPassword', 400)
     );
-  }
 
-  // 2) Filter out unwanted field names that are not allowed to be updated (prevent user from setting role etc)
-  const filteredBody = filterObj(req.body, "name", "email");
+  // 2) filter out unwanted field names that are not allowed to be updated (prevent user from setting role etc)
+  const filteredBody = filterObj(req.body, 'name', 'surname', 'birthDate', 'photo');
 
-  // 3) Update user document
+  // 3) update user document
+  // NOTE update validators only run on the paths specified in the update.
   const updatedUser = await User.findByIdAndUpdate(req.user.id, filteredBody, {
     new: true,
     runValidators: true,
   });
 
   res.status(200).json({
-    status: "success",
+    status: 'success',
     data: {
       user: updatedUser,
     },
@@ -48,13 +45,14 @@ exports.deleteMe = catchAsync(async (req, res, next) => {
   await User.findByIdAndUpdate(req.user.id, { active: false });
 
   res.status(204).json({
-    status: "success",
+    status: 'success',
     data: null,
   });
 });
 
 exports.getAllUsers = factory.getAll(User);
 exports.getUser = factory.getOne(User);
-// Only for admins, updating data that is not the password, because save middlewares are not run
+// NOTE only for admins
+// NOTE for updating data that is not the password, because save middlewares are not run
 exports.updateUser = factory.updateOne(User);
 exports.deleteUser = factory.deleteOne(User);

@@ -1,7 +1,7 @@
 {
-  "name": "baunited-backend",
+  "name": "baunited-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend server of BAUnited mobile app.",
   "main": "server.js",
   "scripts": {
     "start:dev": "nodemon server.js",
@@ -10,11 +10,10 @@
     "debug-new": "node --inspect server.js",
     "debug-prod": "NODE_ENV=production ndb server.js"
   },
-  "author": "",
+  "author": "Batuhan Özcan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
     "express-mongo-sanitize": "^2.2.0",
@@ -29,4 +28,3 @@
     "xss-clean": "^0.1.4"
   }
 }
-

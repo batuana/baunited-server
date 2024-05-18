@@ -6,13 +6,11 @@ class APIFeatures {
 
   filter() {
     const queryObj = { ...this.queryString };
-    const excludedFields = ["page", "sort", "limit", "fields"];
+    const excludedFields = ['page', 'sort', 'limit', 'fields'];
     excludedFields.forEach(el => delete queryObj[el]);
 
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, match => `$${match}`);
-
-    console.log(JSON.parse(queryStr));
 
     this.query = this.query.find(JSON.parse(queryStr));
 
@@ -21,11 +19,10 @@ class APIFeatures {
 
   sort() {
     if (this.queryString.sort) {
-      // console.log(this.queryString); uses the last one with the help of hpp
-      const sortBy = this.queryString.sort.replaceAll(",", " "); // + " _id"
+      const sortBy = this.queryString.sort.replaceAll(',', ' '); // REVIEW we might have to add " _id" in the end to solve pagination issues
       this.query = this.query.sort(sortBy);
     } else {
-      this.query = this.query.sort("-createdAt _id");
+      this.query = this.query.sort('-createdAt _id');
     }
 
     return this;
@@ -33,10 +30,10 @@ class APIFeatures {
 
   limitFields() {
     if (this.queryString.fields) {
-      const fields = this.queryString.fields.replaceAll(",", " ");
+      const fields = this.queryString.fields.replaceAll(',', ' ');
       this.query = this.query.select(fields);
     } else {
-      this.query = this.query.select("-__v");
+      this.query = this.query.select('-__v');
     }
 
     return this;
@@ -49,6 +46,7 @@ class APIFeatures {
 
     this.query = this.query.skip(skip).limit(limit);
 
+    // REVIEW we might have to fix the issue when the user asks for a page that does not exist
     // if (this.queryString.page) {
     //   const numTours = await Tour.countDocuments();
     //   if (skip >= numTours) throw new Error("This page does not exist");
