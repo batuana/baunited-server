@@ -65,7 +65,7 @@ exports.getOne = (Model, popOptions) =>
     });
   });
 
-exports.getAll = Model =>
+exports.getAll = (Model, popOptions) =>
   catchAsync(async (req, res, next) => {
     // REVIEW allowing for nest GET comments on post (hack)
     let filter = {};
@@ -76,6 +76,8 @@ exports.getAll = Model =>
       .sort()
       .limitFields()
       .paginate();
+
+    if (popOptions) features.query = features.query.populate(popOptions);
 
     const docs = await features.query;
 

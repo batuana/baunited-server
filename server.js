@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const socketio = require('socket.io');
 
 process.on('uncaughtException', err => {
   console.log('UNCAUGHT EXCEPTION! 🔴 Shutting down...');
@@ -19,6 +20,21 @@ mongoose.connect(DB).then(con => {
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(`App running on port ${port}...`);
+});
+
+const io = socketio(server);
+
+io.of('/').on('connection', socket => {
+  console.log(`${socket.id} has connected.`);
+  socket.on('messageToServer', message => {
+    console.log(`Incoming message: ${message}`);
+    io.emit('messageFromServer', {
+      message,
+      receiver: 'me',
+      sender: 'you',
+      createdAt: '18:31',
+    });
+  });
 });
 
 // last safety net

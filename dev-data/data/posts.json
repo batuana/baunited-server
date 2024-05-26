@@ -1,0 +1,92 @@
+[
+  {
+    "title": "What's your go-to comfort food?",
+    "description": "Had a really rough day at work today. Everything that could go wrong, did go wrong. By the time I got home, I just wanted something to make me feel better. So I made my mom's homemade mac and cheese. There's just something so comforting about it, the creamy cheese, the perfectly cooked pasta. It brings back so many childhood memories. I know everyone has that one dish that makes everything seem okay, even if just for a moment. What’s your comfort food that never fails to lift your spirits?",
+    "rating": 10,
+    "user": "6648dd61853e01ae5e1e8c66"
+  },
+  {
+    "title": "Found a cute stray kitten, what should I do?",
+    "description": "Hey everyone, I found this adorable stray kitten near my apartment building today. It looks pretty healthy but doesn’t have a collar. I gave it some food and water, and it seems really friendly. I’ve always wanted a pet, but I’m not sure if I should take it in or try to find its owner first. I’ve put up some flyers in the neighborhood and posted on social media. In the meantime, should I take it to the vet? What else should I do to make sure it’s okay?",
+    "rating": 33,
+    "user": "6648dd61853e01ae5e1e8c66"
+  },
+  {
+    "title": "Just finished a 10k run!",
+    "description": "I’m not a professional runner by any means, but I’ve been training for a while and today I finally completed my first 10k run! It was one of the hardest things I’ve ever done, both physically and mentally. The last kilometer felt like it went on forever, but crossing that finish line was an incredible feeling. Now I’m feeling super proud but also really exhausted. Any tips from experienced runners on how to recover faster and avoid soreness tomorrow?",
+    "rating": 29,
+    "user": "6648dd61853e01ae5e1e8c66"
+  },
+  {
+    "title": "What's the best way to spend a rainy Sunday?",
+    "description": "It's been raining all day, and I’ve got no plans. I usually love going out on weekends, but today seems like the perfect opportunity to just stay in and relax. I’m thinking about catching up on some reading or maybe binge-watching a new TV series. I also have some ingredients to try a new baking recipe. What do you all do to make the most of a rainy day at home? Any favorite movies, books, or activities you recommend?",
+    "rating": 5,
+    "user": "6648dd61853e01ae5e1e8c66"
+  },
+  {
+    "title": "Made my first sourdough bread!",
+    "description": "After weeks of practice and a few failed attempts, I finally baked my first sourdough loaf, and it turned out amazing! The crust is crispy, the inside is soft and airy, and it tastes just perfect. I never thought I’d be able to make bread from scratch, but the process was surprisingly therapeutic. Any fellow bakers here with tips for a newbie? I’d love to hear your experiences and any advice on how to improve even more.",
+    "rating": 7,
+    "user": "6648e412f34dc75e5e365ca2"
+  },
+  {
+    "title": "Traveling alone for the first time",
+    "description": "I’ve always dreamed of traveling solo and finally took the plunge. I just booked a trip to Europe for next month. I’m excited but also a bit nervous about being on my own in a foreign country. Any seasoned solo travelers here with advice on how to stay safe and make the most of the experience? What are some must-see places and activities that I shouldn't miss? Also, any tips on meeting new people while traveling alone?",
+    "rating": 26,
+    "user": "6648e412f34dc75e5e365ca2"
+  },
+  {
+    "title": "Rediscovering old hobbies",
+    "description": "During the pandemic, I’ve had a lot of time to reflect and decided to pick up painting again after years of not touching a brush. I forgot how much I enjoyed it and how relaxing it can be. I’ve started working on a few pieces, and it’s been a great way to unwind and express myself creatively. What hobbies have you guys gone back to recently? It’s interesting how old interests can reignite our passion and bring us so much joy.",
+    "rating": 20,
+    "user": "6648e412f34dc75e5e365ca2"
+  },
+  {
+    "title": "Favorite underrated TV shows?",
+    "description": "I’ve been looking for some new TV shows to binge-watch and realized I’ve been missing out on a lot of hidden gems. I recently discovered a show that didn’t get much attention but turned out to be amazing. It made me wonder, what are some of your favorite underrated TV shows that you think deserve more recognition? I’m open to any genre, so throw your recommendations my way!",
+    "rating": 34,
+    "user": "6648e412f34dc75e5e365ca2"
+  },
+  {
+    "title": "Starting a garden, where do I begin?",
+    "description": "I’ve got a bit of space in my backyard and decided to start a garden. I’ve always admired those lush, green gardens with beautiful flowers and fresh veggies, but I have no idea where to start. Should I begin with flowers or vegetables? What are some easy plants for beginners? Any tips on soil preparation and pest control would be greatly appreciated. Looking forward to turning my backyard into a little green haven.",
+    "rating": 8,
+    "user": "6650c589545ccd546c8771de"
+  },
+  {
+    "title": "Best books you've read recently?",
+    "description": "I’ve been in a bit of a reading slump lately and need some good book recommendations to get back on track. What’s the best book you’ve read in the last year and why did you love it? I’m open to all genres, from fiction to non-fiction, thrillers to romance. Tell me about a book that you couldn’t put down or one that left a lasting impression on you.",
+    "rating": 23,
+    "user": "6650c589545ccd546c8771de"
+  },
+  {
+    "title": "Excited for the New Semester!",
+    "description": "Hey everyone! With the new semester just around the corner, I'm feeling a mix of excitement and nerves. Can't wait to meet new classmates, dive into interesting courses, and make the most out of this academic journey. Any tips for staying organized and motivated throughout the semester?",
+    "rating": 50,
+    "user": "6650c589545ccd546c8771de"
+  },
+  {
+    "title": "Looking for Study Buddies",
+    "description": "Hey fellow students! As the workload for the new semester starts to pile up, I'm on the lookout for study buddies to keep each other motivated and accountable. Whether it's forming a study group or just sharing study tips, let's help each other succeed!",
+    "rating": 21,
+    "user": "6650c589545ccd546c8771de"
+  },
+  {
+    "title": "Campus Event Alert: Welcome Back BBQ!",
+    "description": "Attention students! Don't miss out on the Welcome Back BBQ happening this Friday at the campus quad. Free food, music, games, and a chance to catch up with friends after the break. See you all there!",
+    "rating": 9,
+    "user": "6650c5a8545ccd546c8771e0"
+  },
+  {
+    "title": "Need Advice on Choosing Elective Courses",
+    "description": "Hey seniors! I'm having trouble deciding which elective courses to take this semester. There are so many interesting options, but I can only choose a few. Any recommendations or past experiences with standout elective courses?",
+    "rating": 18,
+    "user": "6650c5a8545ccd546c8771e0"
+  },
+  {
+    "title": "Announcement: Student Council Elections",
+    "description": "Attention all students! It's that time of year again – Student Council Elections! If you're passionate about making a difference on campus and representing your peers, consider running for a position. Nomination forms are available at the Student Affairs office. Let's make this year's council the best one yet!",
+    "rating": 11,
+    "user": "6650c5a8545ccd546c8771e0"
+  }
+]
